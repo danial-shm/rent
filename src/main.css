@@ -1,0 +1,68 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@font-face {
+  font-family: Estedad;
+  src: url(./fonts/fa/estedad/Estedad-regular.eot),
+    url(./fonts/fa/estedad/Estedad-regular.ttf),
+    url(./fonts/fa/estedad/Estedad-regular.woff),
+    url(./fonts/fa/estedad/Estedad-regular.woff2);
+}
+* {
+  box-sizing: border-box;
+}
+
+@theme {
+  --font-estedad: Estedad;
+  --breakpoint-desktop: 1024px;
+  --breakpoint-mobile: 340px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-button-next {
+  width: 40px !important;
+  height: 40px !important;
+  background-color: #f3f3f3;
+  border-radius: 8px;
+}
+.swiper-button-prev {
+  width: 40px !important;
+  height: 40px !important;
+  background-color: #f3f3f3;
+  border-radius: 8px;
+}
+.swiper-button-next:after {
+  color: #757575;
+  font-size: 13px !important;
+  font-weight: bold !important;
+  text-align: center !important;
+}
+.swiper-button-prev:after {
+  color: #757575;
+  font-size: 13px !important;
+  font-weight: bold !important;
+  text-align: center !important;
+}
+.swiper-button-disabled{
+  opacity: 0 !important;
+}

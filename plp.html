@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" class="bg-[#F3F3F3] h-[100vh] dark:bg-[#5b5b5b]">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- #region seo_base-->
+    <title>auto rent - اتو رنت</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./src/swiper/swiper-bundle.min.css">
+    <link
+      rel="shortcut icon"
+      href="./src/images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta
+      name="keywords"
+      content="اجاره خودرو , اتو رنت , بنز , بی ام و , پورشه"
+    />
+    <meta name="description" content="این وب سایت برای اجاره خودرو است" />
+    <meta name="robots" content="index,follow" />
+    <!-- #endregion seo_base -->
+  </head>
+  <body>
+    <!-- #region wrapper-->
+    <div class="plp-wrapper desktop:w-full">
+      <!-- #region header-->
+      <div
+        class="header desktop:w-full desktop:h-[430px] desktop:bg-[url(./images/header/img-1.png)] desktop:bg-center desktop:bg-cover desktop:relative desktop:mb-[60px]"
+      >
+        <header class="desktop:w-full desktop:h-full">
+          <!-- #region menu-->
+          <div
+            class="menu desktop:w-[86%] mobile:w-full desktop:h-[100px] bg-[#ffffff] rounded-b-[16px] desktop:mx-auto desktop:p-[32px] flex items-center justify-between flex-row"
+          >
+            <!-- #region menu_logo-->
+            <div
+              class="menu-logo h-[60px] desktop:w-[12%] mobile:w-[120px] desktop:mt-0 mobile:mt-15px desktop:order-1 mobile:order-2 mobile:mr-[20px] desktop:mr-0"
+            >
+              <a href="./index.html">
+                <img
+                  src="./src/images/header/header-logo.png"
+                  alt=""
+                  class="w-full h-full object-contain desktop:mt-0 mobile:mt-[5px]"
+                />
+              </a>
+            </div>
+            <!-- #endregion menu_logo-->
+
+            <!-- #region menu_nav-->
+            <div
+              class="menu-nav desktop:w-[550px] desktop:h-[30px] desktop:flex mobile:hidden desktop:order-2"
+            >
+              <nav
+                class="desktop:w-[100%] desktop:h-[100%] desktop:flex desktop:justify-between desktop:gap-x-[40px] desktop:items-center"
+              >
+                <div>
+                  <a
+                    href="./plp.html"
+                    class="desktop:font-estedad desktop:text-[18px] desktop:font-medium desktop:duration-100 desktop:animate-spin desktop:hover:text-[#194BF0] dark:text-[#797B7C]"
+                    >رزرو خودرو</a
+                  >
+                </div>
+                <div>
+                  <a
+                    href="./pdp.html"
+                    class="desktop:font-estedad desktop:text-[18px] desktop:font-medium desktop:duration-300 desktop:hover:text-[#194BF0] dark:text-[#797B7C]"
+                    >خدمات ما</a
+                  >
+                </div>
+                <div>
+                  <a
+                    href="#"
+                    class="desktop:font-estedad desktop:text-[18px] desktop:font-medium desktop:duration-300 desktop:hover:text-[#194BF0] dark:text-[#797B7C]"
+                    >بلاگ</a
+                  >
+                </div>
+                <div>
+                  <a
+                    href="#"
+                    class="desktop:font-estedad desktop:text-[18px] desktop:font-medium desktop:duration-300 desktop:hover:text-[#194BF0] dark:text-[#797B7C]"
+                    >درباره ما</a
+                  >
+                </div>
+                <div>
+                  <a
+                    href="#"
+                    class="desktop:font-estedad desktop:text-[18px] desktop:font-medium desktop:duration-300 desktop:hover:text-[#194BF0] dark:text-[#797B7C]"
+                    >تماس با ما</a
+                  >
+                </div>
+                <div
+                  class="desktop:flex desktop:items-center desktop:justify-center"
+                >
+                  <a
+                    href="#"
+                    class="desktop:font-estedad desktop:text-[18px] desktop:font-medium"
+                    ><img src="./src/images/header/search-outline.png" alt=""
+                  /></a>
+                </div>
+              </nav>
+            </div>
+            <!-- #endregion menu_nav-->
+
+            <!-- #region menu_login-->
+            <div class="menu-login order-3">
+              <a
+                href="./login.html"
+                class="flex w-[122px] h-[40px] bg-[#194BF0] rounded-[8px] items-center justify-center gap-x-[8px] text-[#FFFFFF] font-estedad text-[18px] font-medium hover:bg-[#194Ba0] duration-300"
+                >ورود / ثبت‌نام</a
+              >
+            </div>
+            <!-- #endregion menu_login-->
+
+            <!-- #region mobile_nav-->
+            <div class="dropdown desktop:hidden">
+              <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                <label
+                  class="btn btn-square bg-[#f3f3f3] swap swap-rotate dark:bg-[#797B7C] dark:border-none"
+                >
+                  <!-- this hidden checkbox controls the state -->
+                  <input type="checkbox" />
+
+                  <!-- hamburger icon -->
+                  <svg
+                    class="swap-off fill-current dark:bg-[#797B7C]"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"
+                    />
+                  </svg>
+
+                  <!-- close icon -->
+                  <svg
+                    class="swap-on fill-current"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 512 512"
+                  >
+                    <polygon
+                      points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"
+                    />
+                  </svg>
+                </label>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-[#f3f3f5] rounded-box z-1 mt-{20%} w-52 p-2 shadow flex"
+              >
+                <li class="w-full h-[40px]">
+                  <a
+                    href="./plp.html"
+                    class="w-full h-full font-estedad leading-[40px] text-center text-[#0c0c0c] font-bold"
+                    >رزرو خودرو</a
+                  >
+                </li>
+                <li class="w-full h-[40px]">
+                  <a
+                    href="./pdp.html"
+                    class="w-full h-full font-estedad leading-[40px] text-center text-[#0c0c0c] font-bold"
+                    >خدمات ما</a
+                  >
+                </li>
+                <li class="w-full h-[40px]">
+                  <a
+                    href="#"
+                    class="w-full h-full font-estedad leading-[40px] text-center text-[#0c0c0c] font-bold"
+                    >بلاگ</a
+                  >
+                </li>
+                <li class="w-full h-[40px]">
+                  <a
+                    href="#"
+                    class="w-full h-full font-estedad leading-[40px] text-center text-[#0c0c0c] font-bold"
+                    >درباره ما</a
+                  >
+                </li>
+                <li class="w-full h-[40px]">
+                  <a
+                    href="#"
+                    class="w-full h-full font-estedad leading-[40px] text-center text-[#0c0c0c] font-bold"
+                    >تماس با ما</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- #endregion mobile_nav-->
+          </div>
+          <!-- #endregion menu-->
+
+          <!-- #region header_text-->
+          <div
+            class="desktop:w-[202px] desktop:h-[25px] desktop:absolute desktop:top-[59%] desktop:left-[50%] desktop:translate-[-50%] desktop:flex desktop:gap-x-[6px] mobile:hidden"
+          >
+            <div
+              class="desktop:text-[16px] desktop:font-estedad desktop:font-normal desktop:text-[#868686] desktop:cursor-pointer"
+            >
+              اتورنت
+            </div>
+            <div
+              class="desktop:flex desktop:items-center desktop:justify-center"
+            >
+              <img src="./src/images/header/arrow-left.png" alt="" />
+            </div>
+            <div
+              class="desktop:text-[16px] desktop:font-estedad desktop:font-normal desktop:text-[#868686] desktop:cursor-pointer"
+            >
+              لیست خودروهای اجاره ای
+            </div>
+          </div>
+          <!-- #endregion header_text-->
+        </header>
+      </div>
+      <!-- #endregion header-->
+
+      <!-- #region main-->
+      <div class="main w-full">
+        <div
+          class="main-center w-[86%] mx-auto flex desktop:gap-x-[24px] mobile:flex-col desktop:flex-row"
+        >
+          <!-- #region mobile_sidebar-->
+          <div class="desktop:hidden mobile:flex  flex-wrap items-center  justify-center mobile:w-50% mobile:h-[200px] mt-1.5  ">
+            <a href="#" class="mobile:w-[80%] mobile:h-[35px]  mobile:flex   justify-center items-center mobile:border mobile:border-black rounded-3xl mobile:bg-white font-estedad mobile:hover:bg-[#194BF0] hover:text-white transition-colors duration-300" >قیمت اجاره</a>
+           <a href="#" class="mobile:w-[80%] mobile:h-[35px]  mobile:flex justify-center items-center mobile:border mobile:border-black rounded-3xl mobile:bg-white font-estedad mobile:hover:bg-[#194BF0] hover:text-white transition-colors duration-300" >برند خودرو </a>
+          <a href="#" class="mobile:w-[80%] mobile:h-[35px]  mobile:flex justify-center items-center mobile:border mobile:border-black rounded-3xl mobile:bg-white font-estedad mobile:hover:bg-[#194BF0] hover:text-white transition-colors duration-300" >بر اساس سلیقه شما</a>
+          </div>
+          <!-- #endregion mobile_sidebar-->
+
+          <!-- #region main_sidebar-->
+          <div
+            class="main-side-bar w-[26%] bg-[#FFFFFF] sticky top-0 rounded-[14px] box-border h-[700px] desktop:flex desktop:flex-col mobile:hidden"
+          >
+            <!-- #region sidebar_top-->
+            <div
+              class="side-bar-top desktop:w-[70%] desktop:h-[94px] desktop:mx-auto desktop:my-[32px] desktop:box-border desktop:border-b-[1px] desktop:border-b-[#CBCBCB]"
+            >
+              <!-- #region rent_price-->
+              <div class="desktop:w-full desktop:flex desktop:justify-between">
+                <div
+                  class="desktop:font-estedad desktop:font-normal desktop:text-[16px] desktop:text-[#727272] desktop:cursor-pointer"
+                >
+                  قیمت اجاره خودرو
+                </div>
+                <div
+                  class="desktop:flex desktop:justify-center desktop:items-center desktop:mt-[5px] desktop:cursor-pointer"
+                >
+                  <img src="./src/images/plp-side-bar/arrow-up.png" alt="" />
+                </div>
+              </div>
+              <!-- #endregion rent_price-->
+
+              <!-- #region price_range-->
+              <div
+                class="desktop:w-full desktop:flex desktop:justify-between desktop:mt-[10px]"
+              >
+                <div
+                  class="desktop:font-estedad desktop:text-[14px] desktop:font-normal desktop:text-[#5E5E5E]"
+                >
+                  تا 6,000,000 تومان
+                </div>
+                <div
+                  class="desktop:font-estedad desktop:text-[14px] desktop:font-normal desktop:text-[#5E5E5E]"
+                >
+                  از 60,000,000 تومان
+                </div>
+              </div>
+              <!-- #endregion price_range-->
+
+              <!-- #region range_slide-->
+              <div class="desktop:w-full desktop:mt-[10px]">
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="40"
+                  class="range range-sm range-primary bg-transparent"
+                />
+              </div>
+              <!-- #endregion range_slide-->
+            </div>
+            <!-- #endregion sidebar_top-->
+
+            <!-- #region sidebar_center-->
+            <div class="side-bar-center desktop:w-[70%] desktop:mx-auto ">
+              <!-- #region sidebar_center_car_brand-->
+              <div class="desktop:w-full desktop:flex desktop:justify-between ">
+                <div
+                  class="desktop:font-estedad desktop:text-[16px] desktop:font-normal text-[#606060] desktop:cursor-pointer
+                               "
+                >
+                  برند خودرو
+                </div>
+                <div class="mt-[5px] desktop:cursor-pointer">
+                  <img src="./src/images/plp-side-bar/arrow-up.png" alt="" />
+                </div>
+              </div>
+              <!-- #endregion sidebar_center_car_brand-->
+
+              <!-- #region brand_select-->
+              <div
+                class="desktop:w-full desktop:mt-[10px] desktop:flex desktop:gap-x-[12px]"
+              >
+                <div>
+                  <input
+                    type="checkbox"
+                    checked="checked"
+                    class="checkbox checkbox-sm bg-[#ffffff] checked:bg-[#194BF0] checked:text-[#ffffff]"
+                    id="benz"
+                  />
+                </div>
+
+                <label
+                  for="benz"
+                  class="desktop:font-estedad text-[16px] text-[#494949] desktop:mt-[3px] desktop:cursor-pointer"
+                >
+                  اجاره بنز</label
+                >
+              </div>
+
+              <div
+                class="desktop:w-full desktop:mt-[10px] desktop:flex desktop:gap-x-[12px]"
+              >
+                <div>
+                  <input
+                    type="checkbox"
+                    class="checkbox checkbox-sm bg-[#ffffff] checked:bg-[#194BF0] checked:text-[#ffffff]"
+                    id="bmw"
+                  />
+                </div>
+
+                <label
+                  for="bmw"
+                  class="desktop:font-estedad text-[16px] text-[#494949] desktop:mt-[3px] desktop:cursor-pointer"
+                >
+                  اجاره بی ام و</label
+                >
+              </div>
+
+              <div
+                class="desktop:w-full desktop:mt-[10px] desktop:flex desktop:gap-x-[12px]"
+              >
+                <div>
+                  <input
+                    type="checkbox"
+                    class="checkbox checkbox-sm bg-[#ffffff] checked:bg-[#194BF0] checked:text-[#ffffff]"
+                    id="peugeot"
+                  />
+                </div>
+
+                <label
+                  for="peugeot"
+                  class="desktop:font-estedad text-[16px] text-[#494949] desktop:mt-[3px] desktop:cursor-pointer"
+                >
+                  اجاره پژو</label
+                >
+              </div>
+
+              <div
+                class="desktop:w-full desktop:mt-[10px] desktop:flex desktop:gap-x-[12px]"
+              >
+                <div>
+                  <input
+                    type="checkbox"
+                    class="checkbox checkbox-sm bg-[#ffffff] checked:bg-[#194BF0] checked:text-[#ffffff]"
+                    id="porsche"
+                  />
+                </div>
+
+                <label
+                  for="porsche"
+                  class="desktop:font-estedad text-[16px] text-[#494949] desktop:mt-[3px] desktop:cursor-pointer"
+                >
+                  اجاره پورشه</label
+                >
+              </div>
+
+              <div
+                class="desktop:w-full desktop:mt-[10px] desktop:flex desktop:gap-x-[12px]"
+              >
+                <div>
+                  <input
+                    type="checkbox"
+                    class="checkbox checkbox-sm bg-[#ffffff] checked:bg-[#194BF0] checked:text-[#ffffff]"
+                    id="kia"
+                  />
+                </div>
+
+                <label
+                  for="kia"
+                  class="desktop:font-estedad text-[16px] text-[#494949] desktop:mt-[3px] desktop:cursor-pointer"
+                >
+                  اجاره کیا</label
+                >
+              </div>
+
+              <div
+                class="desktop:w-full desktop:mt-[10px] desktop:flex desktop:gap-x-[12px]"
+              >
+                <div>
+                  <input
+                    type="checkbox"
+                    class="checkbox checkbox-sm bg-[#ffffff] checked:bg-[#194BF0] checked:text-[#ffffff]"
+                    id="hyundai"
+                  />
+                </div>
+
+                <label
+                  for="hyundai"
+                  class="desktop:font-estedad text-[16px] text-[#494949] desktop:mt-[3px] desktop:cursor-pointer"
+                >
+                  اجاره هیوندای</label
+                >
+              </div>
+              <!-- #endregion brand_select-->
+            </div>
+            <!-- #endregion sidebar_center-->
+
+            <!-- #region sidebar_bottom-->
+            <div
+              class="side-bar-bottom desktop:w-[70%] desktop:mx-auto desktop:mt-[32px] desktop:mb-[32px]"
+            >
+              <!-- #region sidebar_bottom_your_need_car-->
+              <div class="desktop:w-full desktop:flex desktop:justify-between">
+                <div
+                  class="desktop:font-estedad desktop:text-[16px] desktop:font-normal text-[#606060] desktop:cursor-pointer"
+                >
+                  اجاره خودرو براساس نیاز شما
+                </div>
+                <div class="mt-[5px] desktop:cursor-pointer">
+                  <img src="./src/images/plp-side-bar/arrow-up.png" alt="" />
+                </div>
+              </div>
+              <!-- #endregion sidebar_bottom_your_need_car-->
+
+              <!-- #region sidebar_bottom_select_your_need_car -->
+              <div
+                class="desktop:w-full desktop:mt-[10px] desktop:flex desktop:gap-x-[12px]"
+              >
+                <div>
+                  <input
+                    type="radio"
+                    name="radio-3"
+                    checked="checked"
+                    id="with_driver"
+                    class="radio radio-xs bg-[#ffffff] border-[#AEAEAE] checked:text-[#194BF0]"
+                  />
+                  <label
+                    for="with_driver"
+                    class="desktop:font-estedad text-[16px] text-[#494949] desktop:mt-[3px] desktop:cursor-pointer"
+                    >اجاره خودرو با راننده</label
+                  >
+                </div>
+              </div>
+
+              <div
+                class="desktop:w-full desktop:mt-[10px] desktop:flex desktop:gap-x-[12px]"
+              >
+                <div>
+                  <input
+                    type="radio"
+                    name="radio-3"
+                    id="with_out_driver"
+                    class="radio radio-xs bg-[#ffffff] border-[#AEAEAE] checked:text-[#194BF0]"
+                  />
+                  <label
+                    for="with_out_driver"
+                    class="desktop:font-estedad text-[16px] text-[#494949] desktop:mt-[3px] desktop:cursor-pointer"
+                    >اجاره خودرو بدون راننده</label
+                  >
+                </div>
+              </div>
+
+              <div
+                class="desktop:w-full desktop:mt-[10px] desktop:flex desktop:gap-x-[12px]"
+              >
+                <div>
+                  <input
+                    type="radio"
+                    name="radio-3"
+                    id="persian-cars"
+                    class="radio radio-xs bg-[#ffffff] border-[#AEAEAE] checked:text-[#194BF0]"
+                  />
+                  <label
+                    for="persian-cars"
+                    class="desktop:font-estedad text-[16px] text-[#494949] desktop:mt-[3px] desktop:cursor-pointer"
+                    >اجاره خودرو ایرانی</label
+                  >
+                </div>
+              </div>
+
+              <div
+                class="desktop:w-full desktop:mt-[10px] desktop:flex desktop:gap-x-[12px]"
+              >
+                <div>
+                  <input
+                    type="radio"
+                    name="radio-3"
+                    id="luxury-cars"
+                    class="radio radio-xs bg-[#ffffff] border-[#AEAEAE] checked:text-[#194BF0]"
+                  />
+                  <label
+                    for="luxury-cars"
+                    class="desktop:font-estedad text-[16px] text-[#494949] desktop:mt-[3px] desktop:cursor-pointer"
+                    >اجاره خودرو لوکس</label
+                  >
+                </div>
+              </div>
+
+              <div
+                class="desktop:w-full desktop:mt-[10px] desktop:flex desktop:gap-x-[12px]"
+              >
+                <div>
+                  <input
+                    type="radio"
+                    name="radio-3"
+                    id="vip-cars"
+                    class="radio radio-xs bg-[#ffffff] border-[#AEAEAE] checked:text-[#194BF0]"
+                  />
+                  <label
+                    for="vip-cars"
+                    class="desktop:font-estedad text-[16px] text-[#494949] desktop:mt-[3px] desktop:cursor-pointer"
+                    >اجاره خودرو تشریفات</label
+                  >
+                </div>
+              </div>
+
+              <div
+                class="desktop:w-full desktop:mt-[10px] desktop:flex desktop:gap-x-[12px]"
+              >
+                <div>
+                  <input
+                    type="radio"
+                    name="radio-3"
+                    id="bridal-cars"
+                    class="radio radio-xs bg-[#ffffff] border-[#AEAEAE] checked:text-[#194BF0]"
+                  />
+                  <label
+                    for="bridal-car"
+                    class="desktop:font-estedad text-[16px] text-[#494949] desktop:mt-[3px] desktop:cursor-pointer"
+                    >اجاره ماشین عروس</label
+                  >
+                </div>
+              </div>
+              <!-- #endregion sidebar_bottom_select_your_need_car-->
+            </div>
+            <!-- #endregion sidebar_bottom-->
+          </div>
+          <!-- #endregion main_sidebar-->
+
+          <!-- #region main_cars-->
+          <div
+            class="main-cars desktop:w-[70%] mobile:w-full mb-[80px] desktop:mt-0 mobile:mt-[10px]"
+          >
+            <!-- #region main_car_top-->
+            <div class="main-cars-top mb-[24px] flex gap-x-[24px]">
+              <div class="main-cars-right desktop:w-[66%] mobile:w-[50%]">
+                <select
+                  class="select font-estedad text-[14px] font-medium text-[#868686] w-full bg-transparent border-[#9A9A9A] rounded-[8px] dark:border-[#fafafa] dark:text-[#fafafa] focus:outline-none"
+                >
+                  <option disabled selected>تقویم قیمتی</option>
+                  <option class="dark:text-[#0c0c0c]">بنز</option>
+                  <option class="dark:text-[#0c0c0c]">بی ام و</option>
+                  <option class="dark:text-[#0c0c0c]">پورشه</option>
+                </select>
+              </div>
+              <div class="main-cars-left desktop:w-[32%] mobile:w-[50%]">
+                <select
+                  class="select font-estedad text-[14px] font-medium text-[#868686] w-full bg-transparent border-[#9A9A9A] rounded-[8px] dark:border-[#fafafa] dark:text-[#fafafa] focus:outline-none"
+                >
+                  <option disabled selected>مرتب سازی</option>
+                  <option class="dark:text-[#0c0c0c]">قیمت</option>
+                  <option class="dark:text-[#0c0c0c]">برند</option>
+                  <option class="dark:text-[#0c0c0c]">تاریخ</option>
+                </select>
+              </div>
+            </div>
+            <!-- #endregion main_car_top-->
+
+            <!-- #region main_car_center-->
+            <div
+              class="main-cars-center w-full flex justify-between gap-[24px] mb-[24px] desktop:flex-row mobile:flex-col"
+            >
+              <!-- #region cart_car_1-->
+              <div
+                class="cars-bottom-card desktop:w-1/3 mobile:w-full bg-[#FFFFFF] rounded-[16px] p-[16px]"
+              >
+                <div class="w-full">
+                  <!-- #region car_img-->
+                  <img
+                    src="./src/images/plp-cart-img/img-1.png"
+                    class="w-full object-cover"
+                    alt=""
+                  />
+                  <!-- #endregion cat_img-->
+
+                  <!-- #region about_car-->
+                  <div class="w-full mb-[10px]">
+                    <h6
+                      class="font-estedad text-[16px] font-bold text-[#494949] my-[8px]"
+                    >
+                      اجاره بنز s500
+                    </h6>
+                    <span
+                      class="font-estedad desktop:text-[12px] desktop:font-normal text-[#494949]"
+                      >مدل:2016</span
+                    >
+                  </div>
+                  <!-- #endregion about_car-->
+
+                  <!-- #region box_daily-->
+                  <div
+                    class="w-full bg-[#F3F3F3] rounded-[8px] p-[5px] box-border mb-[10px]"
+                  >
+                    <div class="flex justify-between items-center">
+                      <div class="flex gap-x-[10px]">
+                        <span
+                          class="font-estedad text-[12px] mt-[4px] dark:text-[#0c0c0c]"
+                          >از ۱ تا 30 روز:</span
+                        >
+                        <h3
+                          class="font-estedad text-[16px] text-[#194BF0] font-bold"
+                        >
+                          8,500,000
+                        </h3>
+                      </div>
+                      <div class="mb-[4px]">
+                        <span
+                          class="font-estedad text-[12px] dark:text-[#0c0c0c]"
+                          >روزانه</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion box_daily-->
+
+                  <!-- #region box_mounth-->
+                  <div
+                    class="w-full bg-[#F3F3F3] rounded-[8px] p-[5px] box-border"
+                  >
+                    <div class="flex justify-between items-center">
+                      <div class="flex gap-x-[10px]">
+                        <span
+                          class="font-estedad text-[12px] mt-[4px] dark:text-[#0c0c0c]"
+                          >از ۱ تا 30 روز:</span
+                        >
+                        <h3
+                          class="font-estedad text-[16px] text-[#194BF0] font-bold"
+                        >
+                          8,500,000
+                        </h3>
+                      </div>
+                      <div class="mb-[4px]">
+                        <span
+                          class="font-estedad text-[12px] dark:text-[#0c0c0c]"
+                          >ماهانه</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion box_mounth-->
+
+                  <!-- #region car_bail-->
+                  <div class="w-full flex justify-between p-[5px] mb-[20px]">
+                    <span class="font-estedad text-[12px] text-[#212121]"
+                      >مبلغ ضمانت:</span
+                    >
+                    <span class="font-estedad text-[12px] text-[#212121]"
+                      >80 میلیون تومان</span
+                    >
+                  </div>
+                  <!-- #endregion car_bail-->
+
+                  <!-- #region cart_button-->
+                  <div
+                    class="w-full flex items-center bg-[#194BF0] justify-center h-[40px] rounded-[8px] btn hover:bg-[#194Ba0]"
+                  >
+                    <a
+                      href="#"
+                      class="block font-estedad text-[14px] text-[#FFFFFF] font-semibold"
+                      >درخواست رزرو</a
+                    >
+                  </div>
+                  <!-- #endregion cart_button-->
+                </div>
+              </div>
+              <!-- #endregion cart_car_1-->
+
+              <!-- #region cart_car_2-->
+              <div
+                class="cars-bottom-card desktop:w-1/3 mobile:w-full bg-[#FFFFFF] rounded-[16px] p-[16px]"
+              >
+                <div class="w-full">
+                  <!-- #region car_img-->
+                  <img
+                    src="./src/images/plp-cart-img/img-2.png"
+                    class="w-full object-cover"
+                    alt=""
+                  />
+                  <!-- #endregion cat_img-->
+
+                  <!-- #region about_car-->
+                  <div class="w-full mb-[10px]">
+                    <h6
+                      class="font-estedad text-[16px] font-bold text-[#494949] my-[8px]"
+                    >
+                      اجاره بنز sl کروک
+                    </h6>
+                    <span
+                      class="font-estedad text-[12px] font-normal text-[#494949]"
+                      >مدل:2016</span
+                    >
+                  </div>
+                  <!-- #endregion about_car-->
+
+                  <!-- #region box_daily-->
+                  <div
+                    class="w-full bg-[#F3F3F3] rounded-[8px] p-[5px] box-border mb-[10px]"
+                  >
+                    <div class="flex justify-between items-center">
+                      <div class="flex gap-x-[10px]">
+                        <span
+                          class="font-estedad text-[12px] mt-[4px] dark:text-[#0c0c0c]"
+                          >از ۱ تا 30 روز:</span
+                        >
+                        <h3
+                          class="font-estedad text-[16px] text-[#194BF0] font-bold"
+                        >
+                          8,500,000
+                        </h3>
+                      </div>
+                      <div class="mb-[4px]">
+                        <span
+                          class="font-estedad text-[12px] dark:text-[#0c0c0c]"
+                          >روزانه</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion box_daily-->
+
+                  <!-- #region box_mounth-->
+                  <div
+                    class="w-full bg-[#F3F3F3] rounded-[8px] p-[5px] box-border"
+                  >
+                    <div class="flex justify-between items-center">
+                      <div class="flex gap-x-[10px]">
+                        <span
+                          class="font-estedad text-[12px] mt-[4px] dark:text-[#0c0c0c]"
+                          >از ۱ تا 30 روز:</span
+                        >
+                        <h3
+                          class="font-estedad text-[16px] text-[#194BF0] font-bold"
+                        >
+                          8,500,000
+                        </h3>
+                      </div>
+                      <div class="mb-[4px]">
+                        <span
+                          class="font-estedad text-[12px] dark:text-[#0c0c0c]"
+                          >ماهانه</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion box_mounth-->
+
+                  <!-- #region car_bail-->
+                  <div class="w-full flex justify-between p-[5px] mb-[20px]">
+                    <span class="font-estedad text-[12px] text-[#212121]"
+                      >مبلغ ضمانت:</span
+                    >
+                    <span class="font-estedad text-[12px] text-[#212121]"
+                      >80 میلیون تومان</span
+                    >
+                  </div>
+                  <!-- #endregion car_bail-->
+
+                  <!-- #region cart_button-->
+                  <div
+                    class="w-full flex items-center bg-[#194BF0] justify-center h-[40px] rounded-[8px] btn hover:bg-[#194Ba0]"
+                  >
+                    <a
+                      href="#"
+                      class="block font-estedad text-[14px] text-[#FFFFFF] font-semibold"
+                      >درخواست رزرو</a
+                    >
+                  </div>
+                  <!-- #endregion cart_button-->
+                </div>
+              </div>
+              <!-- #endregion cart_car_-->
+
+              <!-- #region cart_car_3-->
+              <div
+                class="cars-bottom-card desktop:w-1/3 mobile:w-full bg-[#FFFFFF] rounded-[16px] p-[16px]"
+              >
+                <div class="w-full">
+                  <!-- #region car_img-->
+                  <img
+                    src="./src/images/plp-cart-img/img-3.png"
+                    class="w-full object-cover"
+                    alt=""
+                  />
+                  <!-- #endregion cat_img-->
+
+                  <!-- #region about_car-->
+                  <div class="w-full mb-[10px]">
+                    <h6
+                      class="font-estedad text-[16px] font-bold text-[#494949] my-[8px]"
+                    >
+                      اجاره بنز E350 سدان
+                    </h6>
+                    <span
+                      class="font-estedad text-[12px] font-normal text-[#494949]"
+                      >مدل:2016</span
+                    >
+                  </div>
+                  <!-- #endregion about_car-->
+
+                  <!-- #region box_daily-->
+                  <div
+                    class="w-full bg-[#F3F3F3] rounded-[8px] p-[5px] box-border mb-[10px]"
+                  >
+                    <div class="flex justify-between items-center">
+                      <div class="flex gap-x-[10px]">
+                        <span
+                          class="font-estedad text-[12px] mt-[4px] dark:text-[#0c0c0c]"
+                          >از ۱ تا 30 روز:</span
+                        >
+                        <h3
+                          class="font-estedad text-[16px] text-[#194BF0] font-bold"
+                        >
+                          8,500,000
+                        </h3>
+                      </div>
+                      <div class="mb-[4px]">
+                        <span
+                          class="font-estedad text-[12px] dark:text-[#0c0c0c]"
+                          >روزانه</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion box_daily-->
+
+                  <!-- #region box_mounth-->
+                  <div
+                    class="w-full bg-[#F3F3F3] rounded-[8px] p-[5px] box-border"
+                  >
+                    <div class="flex justify-between items-center">
+                      <div class="flex gap-x-[10px]">
+                        <span
+                          class="font-estedad text-[12px] mt-[4px] dark:text-[#0c0c0c]"
+                          >از ۱ تا 30 روز:</span
+                        >
+                        <h3
+                          class="font-estedad text-[16px] text-[#194BF0] font-bold"
+                        >
+                          8,500,000
+                        </h3>
+                      </div>
+                      <div class="mb-[4px]">
+                        <span
+                          class="font-estedad text-[12px] dark:text-[#0c0c0c]"
+                          >ماهانه</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion box_mounth-->
+
+                  <!-- #region car_bail-->
+                  <div class="w-full flex justify-between p-[5px] mb-[20px]">
+                    <span class="font-estedad text-[12px] text-[#212121]"
+                      >مبلغ ضمانت:</span
+                    >
+                    <span class="font-estedad text-[12px] text-[#212121]"
+                      >80 میلیون تومان</span
+                    >
+                  </div>
+                  <!-- #endregion car_bail-->
+
+                  <!-- #region cart_button-->
+                  <div
+                    class="w-full flex items-center bg-[#194BF0] justify-center h-[40px] rounded-[8px] btn hover:bg-[#194Ba0]"
+                  >
+                    <a
+                      href="#"
+                      class="block font-estedad text-[14px] text-[#FFFFFF] font-semibold"
+                      >درخواست رزرو</a
+                    >
+                  </div>
+                  <!-- #endregion cart_button-->
+                </div>
+              </div>
+              <!-- #endregion cart_car_3-->
+            </div>
+            <!-- #endregion main_car_center-->
+
+            <!-- #region main_car_bottom-->
+            <div
+              class="main-cars-bottom w-full flex justify-between gap-[24px] desktop:flex-row mobile:flex-col"
+            >
+              <!-- #region cart_car_1-->
+              <div
+                class="cars-bottom-card desktop:w-1/3 mobile:w-full bg-[#FFFFFF] rounded-[16px] p-[16px]"
+              >
+                <div class="w-full">
+                  <!-- #region car_img-->
+                  <img
+                    src="./src/images/plp-cart-img/img-4.png"
+                    class="w-full object-cover"
+                    alt=""
+                  />
+                  <!-- #endregion cat_img-->
+
+                  <!-- #region about_car-->
+                  <div class="w-full mb-[10px]">
+                    <h6
+                      class="font-estedad text-[16px] font-bold text-[#494949] my-[8px]"
+                    >
+                      اجاره خودرو بنز E250
+                    </h6>
+                    <span
+                      class="font-estedad text-[12px] font-normal text-[#494949]"
+                      >مدل:2016</span
+                    >
+                  </div>
+                  <!-- #endregion about_car-->
+
+                  <!-- #region box_daily-->
+                  <div
+                    class="w-full bg-[#F3F3F3] rounded-[8px] p-[5px] box-border mb-[10px]"
+                  >
+                    <div class="flex justify-between items-center">
+                      <div class="flex gap-x-[10px]">
+                        <span
+                          class="font-estedad text-[12px] mt-[4px] dark:text-[#0c0c0c]"
+                          >از ۱ تا 30 روز:</span
+                        >
+                        <h3
+                          class="font-estedad text-[16px] text-[#194BF0] font-bold"
+                        >
+                          8,500,000
+                        </h3>
+                      </div>
+                      <div class="mb-[4px]">
+                        <span
+                          class="font-estedad text-[12px] dark:text-[#0c0c0c]"
+                          >روزانه</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion box_daily-->
+
+                  <!-- #region box_mounth-->
+                  <div
+                    class="w-full bg-[#F3F3F3] rounded-[8px] p-[5px] box-border"
+                  >
+                    <div class="flex justify-between items-center">
+                      <div class="flex gap-x-[10px]">
+                        <span
+                          class="font-estedad text-[12px] mt-[4px] dark:text-[#0c0c0c]"
+                          >از ۱ تا 30 روز:</span
+                        >
+                        <h3
+                          class="font-estedad text-[16px] text-[#194BF0] font-bold"
+                        >
+                          8,500,000
+                        </h3>
+                      </div>
+                      <div class="mb-[4px]">
+                        <span
+                          class="font-estedad text-[12px] dark:text-[#0c0c0c]"
+                          >ماهانه</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion box_mounth-->
+
+                  <!-- #region car_bail-->
+                  <div class="w-full flex justify-between p-[5px] mb-[20px]">
+                    <span class="font-estedad text-[12px] text-[#212121]"
+                      >مبلغ ضمانت:</span
+                    >
+                    <span class="font-estedad text-[12px] text-[#212121]"
+                      >80 میلیون تومان</span
+                    >
+                  </div>
+                  <!-- #endregion car_bail-->
+
+                  <!-- #region cart_button-->
+                  <div
+                    class="w-full flex items-center bg-[#194BF0] justify-center h-[40px] rounded-[8px] btn hover:bg-[#194Ba0]"
+                  >
+                    <a
+                      href="#"
+                      class="block font-estedad text-[14px] text-[#FFFFFF] font-semibold"
+                      >درخواست رزرو</a
+                    >
+                  </div>
+                  <!-- #endregion cart_button-->
+                </div>
+              </div>
+              <!-- #endregion cart_car_1-->
+
+              <!-- #region cart_car_2-->
+              <div
+                class="cars-bottom-card desktop:w-1/3 mobile:w-full bg-[#FFFFFF] rounded-[16px] p-[16px]"
+              >
+                <div class="w-full">
+                  <!-- #region car_img-->
+                  <img
+                    src="./src/images/plp-cart-img/img-5.png"
+                    class="w-full object-cover"
+                    alt=""
+                  />
+                  <!-- #endregion cat_img-->
+
+                  <!-- #region about_car-->
+                  <div class="w-full mb-[10px]">
+                    <h6
+                      class="font-estedad text-[16px] font-bold text-[#494949] my-[8px]"
+                    >
+                      اجاره بنز E350 کروک 2013
+                    </h6>
+                    <span
+                      class="font-estedad text-[12px] font-normal text-[#494949]"
+                      >مدل:2013</span
+                    >
+                  </div>
+                  <!-- #endregion about_car-->
+
+                  <!-- #region box_daily-->
+                  <div
+                    class="w-full bg-[#F3F3F3] rounded-[8px] p-[5px] box-border mb-[10px]"
+                  >
+                    <div class="flex justify-between items-center">
+                      <div class="flex gap-x-[10px]">
+                        <span
+                          class="font-estedad text-[12px] mt-[4px] dark:text-[#0c0c0c]"
+                          >از ۱ تا 30 روز:</span
+                        >
+                        <h3
+                          class="font-estedad text-[16px] text-[#194BF0] font-bold"
+                        >
+                          8,500,000
+                        </h3>
+                      </div>
+                      <div class="mb-[4px]">
+                        <span
+                          class="font-estedad text-[12px] dark:text-[#0c0c0c]"
+                          >روزانه</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion box_daily-->
+
+                  <!-- #region box_mounth-->
+                  <div
+                    class="w-full bg-[#F3F3F3] rounded-[8px] p-[5px] box-border"
+                  >
+                    <div class="flex justify-between items-center">
+                      <div class="flex gap-x-[10px]">
+                        <span
+                          class="font-estedad text-[12px] mt-[4px] dark:text-[#0c0c0c]"
+                          >از ۱ تا 30 روز:</span
+                        >
+                        <h3
+                          class="font-estedad text-[16px] text-[#194BF0] font-bold"
+                        >
+                          8,500,000
+                        </h3>
+                      </div>
+                      <div class="mb-[4px]">
+                        <span
+                          class="font-estedad text-[12px] dark:text-[#0c0c0c]"
+                          >ماهانه</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion box_mounth-->
+
+                  <!-- #region car_bail-->
+                  <div class="w-full flex justify-between p-[5px] mb-[20px]">
+                    <span class="font-estedad text-[12px] text-[#212121]"
+                      >مبلغ ضمانت:</span
+                    >
+                    <span class="font-estedad text-[12px] text-[#212121]"
+                      >80 میلیون تومان</span
+                    >
+                  </div>
+                  <!-- #endregion car_bail-->
+
+                  <!-- #region cart_button-->
+                  <div
+                    class="w-full flex items-center bg-[#194BF0] justify-center h-[40px] rounded-[8px] btn hover:bg-[#194Ba0]"
+                  >
+                    <a
+                      href="#"
+                      class="block font-estedad text-[14px] text-[#FFFFFF] font-semibold"
+                      >درخواست رزرو</a
+                    >
+                  </div>
+                  <!-- #endregion cart_button-->
+                </div>
+              </div>
+              <!-- #endregion cart_car_-->
+
+              <!-- #region cart_car_3-->
+              <div
+                class="cars-bottom-card desktop:w-1/3 mobile:w-full bg-[#FFFFFF] rounded-[16px] p-[16px]"
+              >
+                <div class="w-full">
+                  <!-- #region car_img-->
+                  <img
+                    src="./src/images/plp-cart-img/img-6.png"
+                    class="w-full object-cover"
+                    alt=""
+                  />
+                  <!-- #endregion cat_img-->
+
+                  <!-- #region about_car-->
+                  <div class="w-full mb-[10px]">
+                    <h6
+                      class="font-estedad text-[16px] font-bold text-[#494949] my-[8px]"
+                    >
+                      اجاره بنز cls
+                    </h6>
+                    <span
+                      class="font-estedad text-[12px] font-normal text-[#494949]"
+                      >مدل:2016</span
+                    >
+                  </div>
+                  <!-- #endregion about_car-->
+
+                  <!-- #region box_daily-->
+                  <div
+                    class="w-full bg-[#F3F3F3] rounded-[8px] p-[5px] box-border mb-[10px]"
+                  >
+                    <div class="flex justify-between items-center">
+                      <div class="flex gap-x-[10px]">
+                        <span
+                          class="font-estedad text-[12px] mt-[4px] dark:text-[#0c0c0c]"
+                          >از ۱ تا 30 روز:</span
+                        >
+                        <h3
+                          class="font-estedad text-[16px] text-[#194BF0] font-bold"
+                        >
+                          8,500,000
+                        </h3>
+                      </div>
+                      <div class="mb-[4px]">
+                        <span
+                          class="font-estedad text-[12px] dark:text-[#0c0c0c]"
+                          >روزانه</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion box_daily-->
+
+                  <!-- #region box_mounth-->
+                  <div
+                    class="w-full bg-[#F3F3F3] rounded-[8px] p-[5px] box-border"
+                  >
+                    <div class="flex justify-between items-center">
+                      <div class="flex gap-x-[10px]">
+                        <span
+                          class="font-estedad text-[12px] mt-[4px] dark:text-[#0c0c0c]"
+                          >از ۱ تا 30 روز:</span
+                        >
+                        <h3
+                          class="font-estedad text-[16px] text-[#194BF0] font-bold"
+                        >
+                          8,500,000
+                        </h3>
+                      </div>
+                      <div class="mb-[4px]">
+                        <span
+                          class="font-estedad text-[12px] dark:text-[#0c0c0c]"
+                          >ماهانه</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion box_mounth-->
+
+                  <!-- #region car_bail-->
+                  <div class="w-full flex justify-between p-[5px] mb-[20px]">
+                    <span class="font-estedad text-[12px] text-[#212121]"
+                      >مبلغ ضمانت:</span
+                    >
+                    <span class="font-estedad text-[12px] text-[#212121]"
+                      >80 میلیون تومان</span
+                    >
+                  </div>
+                  <!-- #endregion car_bail-->
+
+                  <!-- #region cart_button-->
+                  <div
+                    class="w-full flex items-center bg-[#194BF0] justify-center h-[40px] rounded-[8px] btn hover:bg-[#194Ba0]"
+                  >
+                    <a
+                      href="#"
+                      class="block font-estedad text-[14px] text-[#FFFFFF] font-semibold"
+                      >درخواست رزرو</a
+                    >
+                  </div>
+                  <!-- #endregion cart_button-->
+                </div>
+              </div>
+              <!-- #endregion cart_car_3-->
+            </div>
+            <!-- #endregion main_car_bottom-->
+          </div>
+
+          <!-- #endregion main_cars-->
+        </div>
+      </div>
+      <!-- #endregion main-->
+
+      <!-- #region footer-->
+      <div class="footer w-full">
+        <div
+          class="w-[83%] desktop:mt-[10px] mobile:mt-[10px] bg-[#1E1E1EE5] dark:bg-[#000000] rounded-2xl mx-auto mb-8"
+        >
+          <footer class="w-full">
+            <!-- #region footer_top -->
+            <div
+              class="w-[90%] sm:w-11/12 mx-auto border-[1px] border-[#868686] rounded-[16px] flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-6 sm:mt-10 p-4 sm:p-6 mt-[40px]"
+            >
+              <div class="w-full sm:w-1/3 flex items-center gap-4 sm:gap-5">
+                <img
+                  src="./src/images/footer/phone-icon.png"
+                  alt="تماس"
+                  class="w-10 h-10 sm:w-12 sm:h-12 object-contain"
+                />
+                <div class="flex flex-col gap-2">
+                  <span class="font-estedad text-base text-gray-100"
+                    >ارتباط با ما</span
+                  >
+                  <span class="font-estedad text-base text-gray-100"
+                    >0912-21326545</span
+                  >
+                </div>
+              </div>
+              <div
+                class="w-full sm:w-px h-px sm:h-8 bg-gray-600 sm:my-4 hidden sm:block"
+              ></div>
+              <div class="w-full sm:w-1/3 flex items-center gap-4 sm:gap-5">
+                <img
+                  src="./src/images/footer/mail-icon.png"
+                  alt="ایمیل"
+                  class="w-10 h-10 sm:w-12 sm:h-12 object-contain"
+                />
+                <div class="flex flex-col gap-2">
+                  <span class="font-estedad text-base text-gray-100"
+                    >ایمیل</span
+                  >
+                  <span class="font-estedad text-base text-gray-100"
+                    >autorent@info.com</span
+                  >
+                </div>
+              </div>
+              <div
+                class="w-full sm:w-px h-px sm:h-8 bg-gray-600 sm:my-4 hidden sm:block"
+              ></div>
+              <div class="w-full sm:w-1/3 flex items-center gap-4 sm:gap-5">
+                <img
+                  src="./src/images/footer/city-icon.png"
+                  alt="آدرس"
+                  class="w-10 h-10 sm:w-12 sm:h-12 object-contain"
+                />
+                <div class="flex flex-col gap-2">
+                  <span class="font-estedad text-base text-gray-100">آدرس</span>
+                  <span class="font-estedad text-base text-gray-100"
+                    >تهران- خ شادمان</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- #endregion footer_top -->
+
+            <!-- #region footer_bottom -->
+            <div
+              class="w-[90%] sm:w-11/12 mx-auto flex flex-col gap-6 mt-4 sm:mt-6 px-4 sm:px-8"
+            >
+              <!-- #region footer_bottom_top -->
+              <div
+                class="w-full flex flex-col sm:flex-row justify-between border-b-[1px] border-[#868686] pb-6 gap-6 sm:gap-0"
+              >
+                <div class="w-full sm:w-2/5 flex flex-col gap-6 items-start">
+                  <img
+                    src="./src/images/footer/Logo.png"
+                    alt="لوگو اتورنت"
+                    class="h-12 sm:h-14 object-contain"
+                  />
+                  <p
+                    class="font-estedad text-sm sm:text-base text-gray-100 text-justify"
+                  >
+                    اُتورِنت با رویکرد اعتماد به مشتری، با در اختیار داشتن
+                    بزرگ‌ترین ناوگان خودرویی متشکل از انواع خودروهای صفر
+                    کیلومتر، اقتصادی تا تجاری در سراسر کشور ایران آماده
+                    خدمت‌رسانی به مشتریان است.
+                  </p>
+                </div>
+                <div class="w-full sm:w-1/6 flex flex-col gap-4">
+                  <a
+                    href="#"
+                    class="font-estedad text-sm sm:text-base text-gray-100 font-medium hover:text-yellow-400 transition duration-200"
+                    >دسترسی آسان</a
+                  >
+                  <a
+                    href="#"
+                    class="font-estedad text-sm sm:text-base text-gray-100 font-medium hover:text-yellow-400 transition duration-200"
+                    >سوالات متداول</a
+                  >
+                  <a
+                    href="#"
+                    class="font-estedad text-sm sm:text-base text-gray-100 font-medium hover:text-yellow-400 transition duration-200"
+                    >تماس با ما</a
+                  >
+                  <a
+                    href="#"
+                    class="font-estedad text-sm sm:text-base text-gray-100 font-medium hover:text-yellow-400 transition duration-200"
+                    >درباره ما</a
+                  >
+                </div>
+                <div class="w-full sm:w-1/3 flex flex-col gap-3">
+                  <h6 class="font-estedad text-base sm:text-lg text-gray-100">
+                    خبرنامه
+                  </h6>
+                  <div
+                    class="w-full border border-[#868686] rounded-[8px] flex items-center p-2 gap-2"
+                  >
+                    <input
+                      type="email"
+                      required
+                      placeholder="ایمیل خود را وارد کنید"
+                      class="w-full bg-transparent border-none text-[#ffffff] font-estedad text-sm placeholder:text-gray-100 placeholder:text-center focus:outline-none validator"
+                    />
+                    <div
+                      class="validator-hint font-estedad text-xs text-red-400"
+                    >
+                      آدرس ایمیل نادرست است
+                    </div>
+                    <button
+                      class="bg-yellow-400 text-gray-900 font-estedad text-sm h-8 px-4 rounded-md hover:bg-yellow-500 active:bg-yellow-600 transition duration-200"
+                    >
+                      ارسال
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- #endregion footer_bottom_top -->
+
+              <!-- #region footer_bottom_bottom -->
+              <div
+                class="w-full flex justify-center items-center gap-2 mt-6 mb-4"
+              >
+                <img
+                  src="./src/images/footer/creative-commons.png"
+                  alt="کپی‌رایت"
+                  class="w-5 h-5 object-contain"
+                />
+                <p class="font-estedad text-sm text-gray-400 text-center">
+                  تمامی حقوق این وب‌سایت متعلق به اُتورِنت می‌باشد
+                </p>
+              </div>
+              <!-- #endregion footer_bottom_bottom -->
+            </div>
+            <!-- #endregion footer_bottom -->
+          </footer>
+        </div>
+      </div>
+      <!-- #endregion footer-->
+    </div>
+    <!-- #endregion wraper-->
+
+    
+  </body>
+</html>
